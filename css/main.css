@@ -1,8 +1,13 @@
+body{
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
 .listEntry {
   padding:10px
   display:block;
   width:100%;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+  word-wrap: break-word;
 }
 
 .liDivName {
@@ -11,28 +16,55 @@
   display:block;
   width:100%;
   margin: 0 auto;
+  word-wrap: break-word;
 }
 .liDivText {
   font-size: 15px;
   display:block;
   width:100%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+  word-wrap: break-word;
 }
 ul {
   list-style:none;
   display:block;
-  width:90%;
-  margin:0 auto;
+  width:40%;
+  margin:50px auto 0 30px;
+  position:absolute;
 }
 #formText {
-  padding:20px;
+  padding:5px 0 70px 10px;
 }
 #name {
+  padding:5px 0 5px 10px;
   margin-top:50px;
+}
+#submitForm{
+  margin-right:50px;
+}
+input, textarea {
+  border-radius:5px;
+  box-shadow:none;
+  border-width:2px !important;
+  border-color:rgba(173, 173, 173, 1);
+  border-style:solid;
 }
 button {
   padding:10px;
 }
+button, input, textarea {
+  margin-bottom: 20px;
+}
 .col-sm-4 {
   margin-top:10px;
 }
+form{
+  margin-left:10px;
+  display: block;
+  position:fixed;
+  margin-top:10%;
+}
+/*input, button {
+  margin right:50%;
+  position:fixed;
+}*/
